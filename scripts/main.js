@@ -2,10 +2,10 @@ let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/logo-reymon.png') {
-        myImage.setAttribute ('src','images/logo-reymon2.png');
+    if (mySrc === 'images/logo-reymon.png') {
+        myImage.setAttribute('src', 'images/logo-reymon2.png');
     } else {
-        myImage.setAttribute ('src','images/logo-reymon.png');
+        myImage.setAttribute('src', 'images/logo-reymon.png');
     }
 }
 
@@ -14,17 +14,17 @@ let myHeading = document.querySelector('h1');
 
 function setUserName() {
     let myName = prompt('What is your name, pretty human?');
-    if(!myName || myName === null) {
+    if (!myName || myName === null) {
         setUserName();
     } else {
-    localStorage.setItem('name', myName);
-    myHeading.textContent = 'I can show your future, ' + myName
+        localStorage.setItem('name', myName);
+        myHeading.textContent = 'I can show your future, ' + myName
     }
 }
 
-if(!localStorage.getItem('name')) {
+if (!localStorage.getItem('name')) {
     setUserName();
-}   else {
+} else {
     let storedName = localStorage.getItem('name');
     myHeading.textContent = 'I can show your future, ' + storedName;
 }
@@ -32,4 +32,3 @@ if(!localStorage.getItem('name')) {
 myButton.onclick = function() {
     setUserName();
 }
-
