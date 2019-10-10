@@ -9,16 +9,16 @@ myImage.onclick = function() {
     }
 }
 
-let myButton = document.querySelector('button');
+let myButton = document.querySelector('[name="button1"]');
 let myHeading = document.querySelector('h1');
 
 function setUserName() {
-    let myName = prompt('What is your name, pretty human?');
+    let myName = prompt('What\'s your name? :)');
     if (!myName || myName === null) {
         setUserName();
     } else {
         localStorage.setItem('name', myName);
-        myHeading.textContent = 'I can show your future, ' + myName
+        myHeading.textContent = 'Customizing ' + myName + '\'s Predictions'
     }
 }
 
@@ -26,7 +26,7 @@ if (!localStorage.getItem('name')) {
     setUserName();
 } else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'I can show your future, ' + storedName;
+    myHeading.textContent = 'Customizing ' + storedName + '\'s Predictions'
 }
 
 myButton.onclick = function() {
