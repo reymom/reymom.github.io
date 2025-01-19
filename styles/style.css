@@ -1,11 +1,20 @@
-html {
+html, body {
   font-size: 10px;
   font-family: 'IBM Plex Sans', sans-serif;
-  background-color: #385D1C;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 2.5rem;
+  font-weight: 700;
   text-align: center;
   margin: 0;
   padding: 20px 0;
@@ -19,18 +28,45 @@ p, li {
   letter-spacing: 1px;
 }
 
-body {
-  width: 700px;
-  margin: 0 auto;
-  background-color: #88AB6D;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
-}
-
 img {
   width: 300px;
   display: block;
   margin: 0 auto;
+}
+
+.policy-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #212529;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .policy-content {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+footer a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+footer, nav {
+  width: 100%;
 }
 
 .text-responsive {
