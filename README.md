@@ -1,3 +1,5 @@
 # reymom.github.io
-My first test WebPage.
-Check on github site: https://reymom.github.io/
+
+inSphere's Obfuscated Cat AI-data-driven insights.
+
+Github site: https://reymom.github.io/.
