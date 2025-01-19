@@ -32,3 +32,29 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+.text-responsive {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .text-responsive {
+        font-size: 1rem;
+    }
+
+    .responsive-image {
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-responsive {
+        font-size: 0.875rem;
+    }
+
+    .responsive-image {
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
+}
