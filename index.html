@@ -19,7 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
   </head>
 
   <body>
@@ -58,13 +58,42 @@
           </div>
           <div class="col-6 text-right">
             <img
-              src="images/obfuscated_cat_flying.png"
+              src="assets/images/obfuscated_cat_flying.png"
               alt="Obfuscated Cat: Shaping Future Trends"
               class="rounded-circle img-fluid responsive-image"
             />
           </div>
         </div>
       </div>
+
+      <!-- Video Upload Section -->
+      <div class="card mt-4">
+        <div class="card-header">
+          <h3>Upload Video</h3>
+        </div>
+        <div class="card-body">
+          <!-- Video Preview -->
+          <div class="text-center mb-3">
+            <video id="videoPreview" width="320" height="240" controls>
+              <source src="assets/videos/test_video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Upload Button -->
+          <div class="text-center">
+            <button
+              id="uploadButton"
+              class="btn btn-primary btn-lg"
+              onclick="triggerUpload()"
+            >
+              Upload to TikTok
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
       <div class="row">
         <div class="col-md-4">
           <h2>Virality Analysis</h2>
